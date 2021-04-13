@@ -63,6 +63,9 @@ $(function(){
     // console.log(++inc); //output 11
     // console.log(inc++); //output 10 because out 'dec' before 'dec' stay "11"
 
+    // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table  table operation
     // console.log(2*4 == '8'); // true 
-    // console.log(2*4 === '8'); // false
+    // console.log(2*4 === '8'); // false 
+
+    let bb = "banana";
 });
