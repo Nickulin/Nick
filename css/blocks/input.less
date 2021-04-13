@@ -1,0 +1,142 @@
+//main: ../style.less
+.inspect{
+    text-align: center;
+    &--plan{
+        padding: 30px 0;
+    }
+}
+.inspect__header{
+    font-size: 40px;
+    color: @black;
+    font-weight: normal;
+    line-height: 0;
+    padding: 40px 0;
+}
+.inspect__text{
+    font-size: 16px;
+    width: 580px;
+    margin: 0 auto;
+    color: @black;
+    &--plan{
+        margin: 0 auto 30px;
+    }
+    &--suptext{
+        width: 750px;
+    }
+}
+
+.input__search{
+    width: 100%;
+    max-width: 640px;
+    border: 10px solid transparent;
+    -webkit-border-image: -webkit-linear-gradient(left, #973a47 , #36334d);
+    border-image-slice: 1;
+    display: flex;
+    margin: 30px auto ;
+}
+.input__box{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.input__mail {
+    width: 90%;
+    padding: 20px 0 20px 15px ;
+    font-weight: bolder;
+    display: inline-block;
+    text-align: start;
+    background-color: none;
+    border: none;
+    cursor: text;
+
+    &::placeholder{
+        color: @black;
+        font-size: 16px;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.input__faq{
+    width: 0;
+    height: 0;
+
+    -webkit-apperance: none;
+    apperance: none;
+
+    position: absolute;
+    right: 0;
+}
+.input__faq:after{
+    content: "";
+    display: block;
+
+    border-style: solid;
+    border-width: 15px 10px 0 10px;
+    border-color: @text transparent transparent transparent;
+
+    position: absolute;
+    right: 15px;
+
+    transform: translateY(100%);
+}
+.input__mail:focus ~ .input__faq:after{
+    border-style: solid;
+    border-width: 0 10px 15px 10px;
+    border-color: transparent transparent @text transparent;
+}
+
+
+.input__btn{
+    width: 25%;
+    font-size: 14px;
+    border: none;
+    color: @white;
+    text-transform: uppercase;
+    background-color: @red;
+    padding: 20px 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    &:focus{
+        outline: none;
+        background-color: darken(@red, 10%);
+        color: darken(@white, 10%);
+    }
+     &--plan{
+        min-width: 220px;
+        padding: 15px 5px;
+    }
+}
+.inspect__item{
+    display: flex;
+    margin-bottom: 30px;
+}
+.inspect__inner{
+    width: 33.3%;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    &:first-child{
+        margin-left: 0;
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.inspect__notebook{
+    font-size: 25px;
+}
+.inspect__info{
+    padding-left: 35px;
+    text-align: start;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.inspect__title{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: @black;
+}

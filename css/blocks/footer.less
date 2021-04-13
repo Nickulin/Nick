@@ -1,0 +1,38 @@
+//main: ../style.less
+
+footer{
+    margin: 25px 0 20px;
+}
+.row{
+    display: flex;
+
+    div{
+        padding-top: 15px;
+        width: 160px;
+    }
+    div:last-child{
+        width: 300px;
+        color: @black;
+    }
+}
+.row__name{
+    text-transform: uppercase;
+    color: @black;
+    font-weight: bold;
+}
+.number{
+    display: flex;
+    flex-direction: column;
+
+    a{
+        color: @black;
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+    .map__email{
+        font-weight: bold;
+        color: @red;
+    }
+}

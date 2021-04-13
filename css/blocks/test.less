@@ -1,0 +1,59 @@
+// main: ../style.less
+.test{
+    max-height: 300px;
+    overflow: hidden;
+}
+.test__item{
+    text-align: center;
+}
+
+.test__photo{
+
+    margin: 25px 0;
+    img{
+        display: block;
+        width: auto;
+        height: 80px;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+}
+.test_name{
+    margin-bottom: 50px;
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: .5;
+    li{
+        margin: 0 5px;
+    }
+    .slick-active button{
+        height: 15px;
+        width: 15px;
+        background: @black;
+        border: 2px solid @text;
+        }
+    .slick-active button:focus{
+        outline: none;
+    }
+    button{
+        background: @text;
+        border-radius: 50%;
+        border: none;
+        height: 15px;
+        width: 15px;
+        color: transparent;
+        font-size: 0;
+        cursor: pointer;
+    }
+    button:active{
+        outline: none;
+    }
+}

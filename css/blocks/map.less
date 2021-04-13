@@ -1,0 +1,78 @@
+// main: ../style.less
+
+.map{
+    margin-top: 60px;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.map__contry{
+    opacity: .5;
+    img{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: .5;
+    }
+
+}
+.map__info{
+    color: @black;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+
+    h5{
+        font-size: 18px;
+        max-width: 500px;
+        width: 100%;
+        margin: 35px 0 45px;
+    }
+}
+.map__title{
+    max-width: 330px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: lighter;
+}
+.telephone{
+    display: flex;
+    a{
+        color: @black;
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+    .map__email{
+        margin: 0 10px;
+        color: @red;
+    }
+}
+.map__email{
+    font-weight: bold;
+    color: @red;
+}
+
+.map__cart{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 65%;
+    transform: translate3d(-50%, -50%, 0)
+}
+.map__cart i{
+    font-size: 30px;
+    color: #f38181;
+}
+.map__content {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f38181;
+    font-size: 24px;
+    font-weight: 700;
+}

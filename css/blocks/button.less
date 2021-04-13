@@ -1,0 +1,90 @@
+//main: ../style.less
+
+.header__button{
+    display: inline-block;
+    vertical-align: top;
+    font-family: inherit;
+    text-align: center;
+
+    padding:  12px 30px ;
+    max-height: 40px;
+    border: @red 1px solid;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: @text;
+
+    @media @tablet{
+        padding: 8px 20px;
+    }
+
+
+    &:hover,
+    &:focus,
+    &:active{
+        cursor: pointer;
+        border: darken(@red, 10%) 1px solid;
+        color: darken(@text, 10%);
+    }
+}
+.intro__btn{
+    vertical-align: top;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+    font-family: inherit;
+    border: 0;
+    color: @white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    &--red{
+        background-color: @red;
+    }
+    &:focus,
+    &:active,
+    &:hover{
+        outline: none;
+        background-color: darken(@red, 10%);
+    }
+
+    &--plan{
+        border: none;
+        background-color: @text;
+        color: @white;
+        &:focus,
+        &:active,
+        &:hover{
+            outline: none;
+            background-color: darken(@text, 10%);
+        }
+    }
+}
+.blog__button{
+    text-align: center;
+    width: 100%;
+}
+.blog__btn{
+    display: inline-block;
+    vertical-align: top;
+    font-family: inherit;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    background-color: #2c3039;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 60px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &:hover,:active{
+        background-color: lighten(#2c3039, 20%);
+    }
+}
+
