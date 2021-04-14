@@ -21,6 +21,7 @@ $(function(){
     console.log(2);
     
     const  number = {
+        b: 10,
         a: 10,
         name : 'Adam',
         married : false
@@ -67,5 +68,6 @@ $(function(){
     // console.log(2*4 == '8'); // true 
     // console.log(2*4 === '8'); // false 
 
+    let bb = "banana";
     let bb = "banana";
 });
