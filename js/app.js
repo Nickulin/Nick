@@ -28,7 +28,7 @@ $(function(){
     };
     number.a = 20;
     console.log(number.name);
-    console.log(number["name"]);
+    //console.log(number["name"]);
 
     let arr = [ 1, 'col', [1, 4, 4, 2]];
 
@@ -68,6 +68,5 @@ $(function(){
     // console.log(2*4 == '8'); // true 
     // console.log(2*4 === '8'); // false 
 
-    let bb = "banana";
     let bb = "banana";
 });
